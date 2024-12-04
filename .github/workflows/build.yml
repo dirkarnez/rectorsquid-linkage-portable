@@ -35,7 +35,7 @@ jobs:
           .\lessmsi\lessmsi.exe x "linkage.msi" "installation\"
 
       - shell: cmd
-        run: xcopy /H /Y /C "linkage.exe.Portable.cmd" "installation"
+        run: xcopy /H /Y /C "linkage.exe.Portable.cmd" "installation\SourceDir\Linkage"
           
       - name: Archive Release
         uses: thedoctor0/zip-release@master
